@@ -1,0 +1,32 @@
+.btn-swtich{
+    width: 100px;
+    height: 30px;
+    padding: 0px 15px;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all ease 0.3s;
+    border: 3px solid #580DF6;
+    .container_moon,.container_sun{
+        position: absolute;
+        transition: all ease 0.3s;
+        left: 10px;
+        top: 2px;
+    }
+    .container_moon{
+        left: 65px;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.on{
+    left: 10px !important;
+}
+.off{
+    left: 65px !important;
+}
+.btn-dark{
+    border: 3px solid #580DF6 !important;
+}

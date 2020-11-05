@@ -1,0 +1,20 @@
+.layout-movile_container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .3fr 5fr .3fr;
+    .layout-movile_content{
+        display: grid;
+        grid-template-rows: .3fr 4fr;
+        .content-movile_pages{
+            padding: 0px;
+            background-color: #eee;
+        }
+    }
+}
+.layout-movile_container_dark{
+    .layout-movile_content{
+        .content-movile_pages{
+            background-color: #080412;
+        }
+    }
+}

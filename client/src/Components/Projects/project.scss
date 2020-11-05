@@ -1,0 +1,89 @@
+.project{
+    width: 250px;
+    transition: all ease .3s;
+    height: 230px;
+    .project_image{
+        width: 100%;
+        display: flex;
+        border-radius: 3px;
+        img{
+            width: 100%;
+            border-radius: 3px;
+            z-index: 2 !important;
+        }
+    }
+    .project_info{
+        width: 100%;
+        height: 150px;
+        position: relative;
+        border-radius: 3px;
+        left: 15px;
+        top: -90px;
+        z-index: 1 !important;
+        background: #EEE;
+        box-shadow: 0px 2px 0px rgba(58, 58, 58, 0.062);
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        padding: 20px 10px;
+        h3{
+            font-size: 1em;
+        }
+        .content{
+            display: none;
+            p{
+                margin-top: 10px;
+                font-size: 14px;
+                color: rgb(61, 61, 61);
+            }
+        }
+        .actions{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            a{
+                margin: 0px 15px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+        }
+    }
+    &:hover{
+        transform: translateY(5px);
+        .project_info{
+            box-shadow: 0px 20px 10px rgba(58, 58, 58, 0.062);
+            justify-content: center;
+            z-index: 100000 !important;
+            .content{
+                display: initial;
+            }
+            .actions{
+                display: flex;
+            }
+        }
+    }
+}
+
+.project_dark{
+    .project_info{
+        background-color: #080412;
+        box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.062);
+        h3{
+            color: #EEE !important;
+        }
+        .content{
+            p{
+                color: rgb(189, 189, 189) !important;
+            }
+        }
+        .actions{
+            a{
+                color: #EEE;
+            }
+        }
+    }
+}

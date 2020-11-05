@@ -1,0 +1,15 @@
+.header{
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EEE;
+}
+.header_dark{
+    background-color: #080412;
+}
+@media (max-width: 500px){
+    .header{
+        padding: 10px 20px !important;
+    }
+}

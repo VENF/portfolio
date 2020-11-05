@@ -1,0 +1,122 @@
+.about_container{
+    height: 100%;
+    background-color: #EEE;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    .description{
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        padding: 2.5em;
+        height: 500px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .btn{
+            opacity: 0;
+            border: none;
+            background-color: #580DF6;
+            color: #EEE;
+            padding: 8px 35px;
+            margin-top: 15px;
+            border-radius: 2px;
+            box-shadow: 0px 2px 1px #580DF6;
+            cursor: pointer;
+            outline: none;
+            transition: all ease .3s;
+            &:hover{
+                box-shadow: 0px 4px 8px #570df671;
+                transform: translateY(-5px);
+            }
+        }
+        .view{
+            opacity: 1 !important;
+        }
+        .info{
+            display: grid;
+            grid-template-columns: .2fr 1fr;
+            align-items: center;
+            opacity: 0;
+            p{
+                font-size: 12px;
+                padding-left: 15px;
+            }
+        }
+        .exp{
+            margin-top: 20px;
+            h3{
+                font-size: 1em;
+            }
+            p{
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .tecs{
+        padding-top: 2.4em;
+        opacity: 0;
+        h3{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+.about_container_dakr{
+    background-color: #080412;
+    .description{
+        .info{
+            p{
+                color: #EEE;
+            }
+        }
+        .exp{
+            h3,p{
+                color: #EEE;
+            }
+        }
+    }
+    .tecs{
+        h3{
+            color: #EEE;
+        }
+    }
+}
+@media (max-width: 920px){
+    .about_container{
+        .info{
+            p{
+                font-size: 11px !important;
+            }
+        }
+    }
+}
+@media (max-width: 880px){
+    .about_container{
+        grid-template-columns: 1fr !important;
+        .description{
+            height: 250px;
+        }
+    }
+}
+@media (max-width: 450px){
+    .about_container{
+        .description{
+            height: 290px;
+        }
+    }
+}
+@media (max-width: 400px){
+    .about_container{
+        .info{
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            p{
+                margin-top: 15px;
+                padding-left: 0px !important;
+            }
+        }
+    }
+}

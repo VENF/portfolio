@@ -1,0 +1,17 @@
+.social_container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+    a{
+        margin: 10px 0px;
+        transition: all ease .3s;
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
+}
+.social_container_dark{
+    background-color: #080412;
+}

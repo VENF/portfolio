@@ -1,0 +1,34 @@
+.animate{
+    padding-top: 30px;
+    svg{
+        width: 80%;
+        #component2{
+            animation: one infinite 5s alternate;
+        }
+        #component1{
+            animation: one infinite 5s alternate;
+        }
+        #component5{
+            animation: two infinite 5s alternate;
+        }
+        #Component3{
+            animation: two infinite 5s alternate;
+        }
+    }
+}
+@keyframes one {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+}
+@keyframes two {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}

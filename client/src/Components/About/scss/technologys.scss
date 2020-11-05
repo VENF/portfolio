@@ -1,0 +1,26 @@
+.all-tecs{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding: 5px;
+    .item-tec{
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        span{
+            margin: 0px 10px;
+        }
+    }
+}
+@media (max-width: 500px){
+    .all-tecs{
+        width: 100%;
+        .item-tec{
+            justify-content: center;
+        }
+    }
+}
+.color-dark{
+    color: #EEE;
+}

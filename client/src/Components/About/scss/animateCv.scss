@@ -1,0 +1,29 @@
+.animateCv{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        width: 80%;
+        #circleRing{
+            animation: circle 5s infinite linear;
+            transform-box: fill-box;
+        }
+    }
+}
+@media (max-width: 590px){
+    .animateCv{
+        svg{
+            width: 80%;
+            height: auto;
+        }
+    }
+}
+@keyframes circle {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}

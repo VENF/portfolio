@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #080412;
+}
+p,span,div,a{
+    color: #080412;
+}
+$base: #EEE;
+$primary: #580DF6;
+$base-dark: #080412;
+$primary-ligth: #7C00F6;
+$secondary: #1D0B25;

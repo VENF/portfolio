@@ -1,0 +1,25 @@
+.layout_container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .3fr 3fr .3fr;
+    .layout_content{
+        display: grid;
+        grid-template-columns: .5fr 4fr .5fr;
+    }
+    .content_pages{
+        padding: 0px;
+        background-color: #EEE;
+    }
+}
+.layout_container_dark{
+    .content_pages{
+        background-color: #080412;
+    }
+}
+@media (max-width: 900px){
+    .layout_container{
+        .layout_content{
+            grid-template-columns: .5fr 2fr .5fr;
+        }
+    }
+}

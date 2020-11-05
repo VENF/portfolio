@@ -1,0 +1,27 @@
+.home{
+    background-color: #EEE;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    h1{
+        font-size: 2.8em;
+        margin-bottom: 10px;
+        opacity: 0;
+    }
+    p{
+        opacity: 0;
+    }
+    .content-animation{
+        opacity: 0;
+    }
+    &_dark{
+        background-color: #080412;
+        h1{
+            color: #EEE !important;
+        }
+        p{
+            color:  rgb(179, 177, 177) !important;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.footer{
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEE;
+    p{
+        font-size: 13px;
+    }
+}
+.footer-dark{
+    background-color: #080412;
+    p{
+        color: #EEE !important;
+    }
+}
+
+@media (max-width: 420px){
+    .footer{
+        text-align: center;
+        padding: 10px 20px !important;
+    }
+}
