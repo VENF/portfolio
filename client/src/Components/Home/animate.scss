@@ -1,18 +1,39 @@
 .animate{
-    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     svg{
         width: 80%;
-        #component2{
-            animation: one infinite 5s alternate;
+        padding-top: 60px;
+        #siete, #cuatro, #tres{
+            animation: one infinite 2s alternate;
         }
-        #component1{
-            animation: one infinite 5s alternate;
+        #seis, #cinco, #dos, #uno{
+            animation: two infinite 2s alternate;
         }
-        #component5{
-            animation: two infinite 5s alternate;
+    }
+}
+@media (max-width: 880px){
+    .animate{
+        svg{
+            width: 70%;
+            padding-top: 100px;
         }
-        #Component3{
-            animation: two infinite 5s alternate;
+    }
+}
+@media (max-width: 570px){
+    .animate{
+        svg{
+            width: 80%;
+            padding-top: 100px;
+        }
+    }
+}
+@media (max-width: 570px){
+    .animate{
+        svg{
+            width: 100%;
+            padding-top: 0px !important;
         }
     }
 }

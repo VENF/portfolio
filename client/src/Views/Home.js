@@ -1,33 +1,13 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext } from "react";
 import Theme from "../Context/Theme";
+import { Link } from "react-router-dom";
 import Animate from "../Components/Home/Animate";
-import { TimelineLite, Power2 } from "gsap";
+import Social from "../Components/Social/Social";
 import { Helmet } from "react-helmet";
 import "./scss/home.scss";
 
 const Home = () => {
   const theme = useContext(Theme);
-  const title = useRef(null);
-  const sub = useRef(null);
-  const anim = useRef(null);
-  useEffect(() => {
-    const time = new TimelineLite();
-    time.fromTo(
-      title.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.5, ease: Power2 }
-    );
-    time.fromTo(
-      sub.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.5, ease: Power2 }
-    );
-    time.fromTo(
-      anim.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 0.5, ease: Power2 }
-    );
-  }, []);
   return (
     <>
       <Helmet>
@@ -38,11 +18,28 @@ const Home = () => {
         />
       </Helmet>
       <div className={`home ${theme.dark ? "home_dark" : ""}`}>
-        <div>
-          <h1 ref={title}>Victor Naranjo</h1>
-          <p ref={sub}>Desarrollador Web</p>
-          <div ref={anim} className="content-animation">
-            <Animate />
+        <div className="content">
+          <div className="presentation">
+            <h1>Victor Naranjo</h1>
+            <h3>Desarrollador Web</h3>
+            <p>
+              "La verdad solo se puede encontrar en un lugar: el código". -
+              Robert C. Martin
+            </p>
+            <div className="actions">
+              <Link to="/projects" className="first">
+                Ver Projectos
+              </Link>
+              <Link to="/about">Sobre Mi</Link>
+            </div>
+          </div>
+          <div className="down">
+            <div className="social">
+              <Social />
+            </div>
+            <div className="illustration">
+              <Animate />
+            </div>
           </div>
         </div>
       </div>

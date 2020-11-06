@@ -1,5 +1,5 @@
 .header{
-    padding: 0px 50px;
+    padding: 10px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,6 +10,6 @@
 }
 @media (max-width: 500px){
     .header{
-        padding: 10px 20px !important;
+        padding: 15px 20px !important;
     }
 }

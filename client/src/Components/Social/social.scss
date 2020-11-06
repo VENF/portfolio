@@ -1,11 +1,11 @@
 .social_container{
     display: flex;
-    flex-flow: column;
     justify-content: center;
     align-items: center;
     background-color: #EEE;
+    padding: 10px 50px;
     a{
-        margin: 10px 0px;
+        margin: 10px 10px;
         transition: all ease .3s;
         &:hover{
             transform: translateY(-5px);
