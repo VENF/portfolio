@@ -17,7 +17,6 @@ export class Server {
     this.server.set('port', process.env.PORT || this.port);
   }
   middlewares() {
-    //const corsOptions = { origin: 'https://pricing-cards.herokuapp.com', optionsSuccessStatus: 200 }
     this.server.use(cors());
     this.server.use(morgan('dev'));
     this.server.use(express.json());
