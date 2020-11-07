@@ -1,0 +1,128 @@
+.about{
+    background-color: #EEE;
+    .content-top{
+        display: grid;
+        grid-template-columns: .2fr 1fr 1fr;
+        padding: 15px;
+        .content-avatar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .description{
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-weight: 300;
+                width: 70%;
+            }
+            a{
+                margin-left: 10px;
+                color: #580DF6;
+            }
+        }
+        .exp{
+            h3{
+                font-weight: 400;
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    margin: 5px 0px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    .content-down{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+        .tecs{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            h3{
+                margin: 30px 0px;
+            }
+        }
+        .cv_contact{
+            padding-top: 10px;
+            .contact{
+                text-align: center;
+            }
+        }
+    }
+    &_dark{
+        background-color: #080412;
+        .content-top{
+            .description{
+                p{
+                    color: #FFF;
+                }
+            }
+            .exp{
+                h3{
+                    color: #FFF;
+                }
+                ul{
+                    li{
+                        color: rgb(218, 218, 218);
+                    }
+                }
+            }
+        }
+        .content-down{
+            .tecs{
+                h3{
+                    color: #FFF;
+                }
+            }
+            .cv_contact{
+                .contact{
+                    h3{
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 650px){
+    .about{
+        height: initial !important;
+        .content-top{
+            grid-template-columns: 1fr !important;
+            grid-template-rows: .5fr 1fr 1fr !important;
+        }
+        .content-down{
+            grid-template-columns: 1fr !important;
+        }
+    }
+}
+@media (max-width: 850px){
+    .about{
+        .content-top{
+            .description{
+                p{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 720px){
+    .about{
+        .content-top{
+            .description{
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import { ThemeContextProvider } from "./Context/Theme";
 
 /*Views*/
 import Home from "./Views/Home";
+import About from './Views/About';
 /*Views*/
 
 /* Components */
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
         </Switch>
       </div>
     </ThemeContextProvider>

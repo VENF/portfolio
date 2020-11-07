@@ -1,18 +1,23 @@
 .avatar{
     border: 3px solid #580DF6;
+    width: 100px;
+    height: 100px;
     display: flex;
-    border-radius: 3px;
+    border-radius: 50%;
+    border-top: 3px solid #EEE;
+    border-bottom: 3px  solid #EEE;
+    padding: 3px;
+    transition: all ease .3s;
+    &:hover{
+        transform: rotate(360deg);
+    }
+    &_dark{
+        border-top: 3px solid #080412;
+        border-bottom: 3px  solid #080412;
+    }
     img{
-        width: 100px;
-        height: auto;
-        border-radius: 3px;
-        position: relative;
-        top: -10px;
-        left: -15px;
-        transition: all ease .3s;
-        &:hover{
-            top: 10px;
-            left: 15px;
-        }
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
     }
 }
