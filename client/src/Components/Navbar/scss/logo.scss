@@ -1,27 +1,30 @@
-.container-logo{
-    display: flex;
-    align-items: center;
-    .logo{
+a{
+    text-decoration: none;
+    .container-logo{
         display: flex;
         align-items: center;
-        margin-right: 5px;
+        .logo{
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+        }
+        .text-logo{
+            .name{
+                font-size: 12px;
+                font-family: 'Lato', sans-serif;
+            }
+            .info{
+                color: #580DF6;
+                font-size: 10px;
+            }
+        }
     }
-    .text-logo{
+    .logo-dark{
         .name{
-            font-size: 12px;
-            font-family: 'Lato', sans-serif;
+            color: #EEE !important;
         }
         .info{
-            color: #580DF6;
-            font-size: 10px;
+            color: #580DF6 !important;
         }
-    }
-}
-.logo-dark{
-    .name{
-        color: #EEE !important;
-    }
-    .info{
-        color: #580DF6 !important;
     }
 }

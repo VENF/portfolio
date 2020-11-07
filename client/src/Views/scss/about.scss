@@ -98,9 +98,15 @@
         .content-top{
             grid-template-columns: 1fr !important;
             grid-template-rows: .5fr 1fr 1fr !important;
+            .exp{
+                padding: 10px;
+            }
         }
         .content-down{
             grid-template-columns: 1fr !important;
+            .tecs{
+                margin-bottom: 30px;
+            }
         }
     }
 }
