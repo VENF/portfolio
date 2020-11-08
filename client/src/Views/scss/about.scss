@@ -55,6 +55,19 @@
             .contact{
                 text-align: center;
             }
+            .animatecv{
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+               a{
+                    position: relative;
+                    top: 40px;
+                    padding: 8px 35px;
+                    border: 1px solid #580DF6;
+                    color: #580DF6;
+                }
+            }
         }
     }
     &_dark{
