@@ -1,0 +1,11 @@
+.projects{
+    background-color: #EEE;
+    display: flex;
+    justify-content: center;
+    .content{
+        padding: 40px 0px;
+    }
+    &_dark{
+        background-color: #080412;
+    }
+}

@@ -5,6 +5,8 @@ import { ThemeContextProvider } from "./Context/Theme";
 /*Views*/
 import Home from "./Views/Home";
 import About from './Views/About';
+import Projects from './Views/Projects';
+import Page404 from './Views/Page404';
 /*Views*/
 
 /* Components */
@@ -18,6 +20,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="*" exact component={Page404} />
         </Switch>
       </div>
     </ThemeContextProvider>
