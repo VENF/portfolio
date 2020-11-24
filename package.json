@@ -1,34 +1,38 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "inst": "npm install && npm install --prefix client ",
-    "start": "cross-env NODE_ENV=pro node ./dist/index.js",
-    "dev": "rimraf dist && cross-env NODE_ENV=dev tsc-watch --onSuccess \"node ./dist/index.js\"",
-    "build": "cross-env NODE_ENV=pro tsc && npm run build --prefix client",
-    "prepare": "node move.js",
-    "clean": "rimraf ./dist"
-  },
-  "author": "Victor Naranjo",
-  "license": "ISC",
+  "name": "venf",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "cors": "^2.8.5",
-    "cross-env": "^7.0.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "fs-extra": "^9.0.1",
-    "morgan": "^1.10.0",
-    "rimraf": "^3.0.2"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "gsap": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3"
   },
-  "devDependencies": {
-    "@types/cors": "^2.8.8",
-    "@types/express": "^4.17.8",
-    "@types/morgan": "^1.9.2",
-    "ts-node": "^9.0.0",
-    "ts-watch": "^1.0.8",
-    "tsc-watch": "^4.2.9",
-    "typescript": "^4.0.5"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
