@@ -1,12 +1,5 @@
 [
     {
-        "img": "https://res.cloudinary.com/dyve5deot/image/upload/v1604436628/frumrkt2_nsqatg.png",
-        "title": "FRUMRKT",
-        "description": "Ecommerce simple desarrollado en next.js para el Frontend y Node, Typescript y Mongodb para la Api",
-        "url": "https://pricing-cards.herokuapp.com",
-        "code": "https://pricing-cards.herokuapp.com"
-    },
-    {
         "img": "https://res.cloudinary.com/dyve5deot/image/upload/v1602281824/Pricing-components_b9flmj.png",
         "title": "Tarjetas de precios con Stripe",
         "description": "Tarjetas de precios desarrolladas en React usando Stripe como procesador de pagos",
