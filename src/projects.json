@@ -7,9 +7,10 @@
         "code": "https://github.com/VENF/pricing-cards"
     },
     {
-        "img": "https://res.cloudinary.com/dyve5deot/image/upload/v1604437474/giffinder_dvx4tr.png",
+        "img": "https://res.cloudinary.com/dyve5deot/image/upload/v1606707101/Giffinder_ymlypa.png",
         "title": "Giffinder",
         "description": "Buscador de Gifs en donde puedes guardar tus gifs favoritos, desarrollado en React, Node, Typescript, Mongodb y Docker",
+        "url":"https://giffinder-zeta.vercel.app/",
         "code": "https://github.com/VENF/giffinder"
     },
     {
