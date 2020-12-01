@@ -69,7 +69,7 @@ const About = () => {
               <Social />
             </div>
             <div className="animatecv">
-              <a href="https://drive.google.com/file/d/1y_P38Co3ku5OXpxmFa6jywVZE3kGfCby/view">Ver cv</a>
+              <a href="https://drive.google.com/file/d/1-SGxma_77FT6JMIjHMtOsMN8WzP0H2DQ/view">Ver cv</a>
               <AnimateCv />
             </div>
           </div>
